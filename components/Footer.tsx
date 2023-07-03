@@ -1,6 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 
+const FooterColumn = () => (
+  <div className='footer_column'>
+    <h4 className='font-semibold'>Title</h4>
+    <ul className='flex flex-col gap-2'>
+      
+    </ul>
+  </div>
+);
+
 const Footer = () => {
   return (
     <footer className="flexStart footer">
@@ -16,6 +25,9 @@ const Footer = () => {
           <p className='text-start text-sm font-normal mt-5 max-w-xs'>
             Flexibble is the world's leading community for creatives to share, grow, and get hired.
           </p>
+        </div>
+        <div className='flex flex-wrap gap-12'>
+          <FooterColumn />
         </div>
       </div>
     </footer>
