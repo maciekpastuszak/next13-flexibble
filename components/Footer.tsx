@@ -5,7 +5,7 @@ const FooterColumn = () => (
   <div className='footer_column'>
     <h4 className='font-semibold'>Title</h4>
     <ul className='flex flex-col gap-2'>
-      
+
     </ul>
   </div>
 );
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='flex flex-col gap-12 w-full'>
         <div className='flex items-start flex-col'>
           <Image 
-            src="/logo=purple.svg"
+            src="/logo-purple.svg"
             width={115}
             height={38}
             alt="Flexibble"
