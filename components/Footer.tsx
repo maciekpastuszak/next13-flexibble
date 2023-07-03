@@ -1,3 +1,4 @@
+import { footerLinks } from '@/constants';
 import Image from 'next/image'
 import React from 'react'
 
@@ -27,7 +28,7 @@ const Footer = () => {
           </p>
         </div>
         <div className='flex flex-wrap gap-12'>
-          <FooterColumn />
+          <FooterColumn title={footerLinks[0].title} links={footerLinks[0].links}/>
         </div>
       </div>
     </footer>
