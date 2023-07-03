@@ -7,7 +7,7 @@ type ColumnProps = {
   links: Array<string>
 };
 
-const FooterColumn = ({title, links}) => (
+const FooterColumn = ({title, links}: ColumnProps) => (
   <div className='footer_column'>
     <h4 className='font-semibold'>{title}</h4>
     <ul className='flex flex-col gap-2'>
