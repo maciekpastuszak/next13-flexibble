@@ -9,7 +9,7 @@ type Providers = {
   type: string;
   signinUrl: string;
   callbackUrl: string;
-  signinUrlParams: Record<string, string>
+  signinUrlParams: Record<string, string | undefined>
 }
 
 const AuthProviders = () => {
