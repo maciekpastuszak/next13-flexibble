@@ -12,13 +12,19 @@ type Provider = {
   signinUrlParams?: Record<string, string | undefined>
 }
 
+type Providers = Record<string, Provider>;
+
 const AuthProviders = () => {
 
   const [providers, setProviders] = useState<Provider | null>(null);
 
-  return (
-    <div>AuthProviders</div>
-  )
+  if(providers) {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
 }
 
 export default AuthProviders
