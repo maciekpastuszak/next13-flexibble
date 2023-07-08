@@ -15,13 +15,15 @@ type Provider = {
 type Providers = Record<string, Provider>;
 
 const AuthProviders = () => {
-
   const [providers, setProviders] = useState<Provider | null>(null);
 
   if(providers) {
     return (
       <div>
-        
+        {Object.values(providers).map
+        ((provider: Provider, i) => (
+          <button key={i}>{provider.id}</button>
+        ))}
       </div>
     )
   }
