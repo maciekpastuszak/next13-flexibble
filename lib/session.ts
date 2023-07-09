@@ -19,5 +19,17 @@ export const authOptions: NextAuthOptions = {
         decode: async ({ secret, token }) => {
 
         }
+    },
+    theme: {
+        colorScheme: 'light',
+        logo: 'logo.png'
+    },
+    callback: {
+        async session({ session }) {
+
+        },
+        async signIn({ user }) {
+            
+        }
     }
 }
