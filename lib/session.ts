@@ -29,7 +29,16 @@ export const authOptions: NextAuthOptions = {
             return session;
         },
         async signIn({ user } : { user:AdapterUser | User}) {
-            
+            try {
+                //get the user if they exist
+
+                //if they don't exist, create them
+
+                //return true
+                
+            } catch (error) {
+                
+            }
         }
     }
 }
